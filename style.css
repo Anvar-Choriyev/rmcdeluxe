@@ -141,6 +141,7 @@ li {
     height: 50px;
     border: 1px solid #EAEAEA;
     border-radius: 50%;
+    cursor: pointer;
 }
 .element img {
     transform: translate(50%, 50%);
@@ -148,8 +149,11 @@ li {
 .heart {
     margin: 5px;
 }
-.element:nth-child(3) {
+.element:nth-child(3), .element:nth-child(4) {
     background-color: #333333;
+}
+.dash-menu {
+    display: none;
 }
 .language {
     width: 79px;
@@ -160,6 +164,7 @@ li {
     border: 1px solid #EAEAEA;
     border-radius: 100px;
     padding: 10px;
+    cursor: pointer;
 }
 .hero-section {
     width: 100%;
@@ -245,7 +250,7 @@ li {
 .tabs li:nth-child(1) {
     font-weight: 600;
     color: #E1AF93;
-    border-bottom: 1px solid #E1AF93;
+    border-bottom: 2px solid #E1AF93;
 }
 .about-tabs p {
     padding: 25px 0 50px;
@@ -288,6 +293,9 @@ li {
     height: 668px;
     padding: 80px 165px;
     position: relative;
+}
+.right-side-hidden {
+    display: none;
 }
 .right-image1 img{
     width: 487px;
@@ -363,6 +371,11 @@ li {
     background: url("./images/image4.png") no-repeat center;
     background-size: cover;
 }
+.cards:nth-child(10) {
+    background: url("./images/image5.png") no-repeat center;
+    background-size: cover;
+    display: none;
+}
 .buildings-head {
     display: flex;
     justify-content: space-between;
@@ -416,13 +429,11 @@ li {
     height: 361px;
     box-shadow: 0px 0px 30px 0px #0F11120D;
     padding: 40px;
+    display: grid;
+    grid-template-columns: auto auto;
 }
 .credit-heading {
     margin-bottom: 40px;
-}
-.credit-form {
-    width: 100%;
-    height: 192px;
 }
 .forms {
     width: 350px;
@@ -444,19 +455,27 @@ li {
     color: #b3b3b3;
 }
 .credit-form {
+    width: 100%;
+    height: 192px;
+    margin-right: 50px;
     display: grid;
-    grid-template-columns: 340px 340px 25px 235px 235px;
+    grid-template-columns: 350px 350px;
     gap: 30px;
 }
-.credit-info {
-    margin-left: 30px;
+.information {
+    padding-left: 50px;
+    display: grid;
+    grid-template-columns: 218px 218px;
+    border-left: 1px solid #EAEAEA;
 }
 .credit-info p {
     font-size: 18px;
     line-height: 26px;
     color: #b3b3b3;
 }
-.credit-form button {
+.credit-fulfillment button {
+    width: 223px;
+    height: 49px;
     margin-top: 20px;
 }
 .question-section {
@@ -507,22 +526,33 @@ li {
     gap: 254px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.12) 75.28%, rgba(0, 0, 0, 0.4) 100%);
 }
-.blogs:nth-child(1) {
+.blog1 {
     background: url("./images/pexels-pixabay-534219.png") no-repeat center;
     background-size: cover;
 }
-.blogs:nth-child(2) {
+.blog2 {
     background: url("./images/pexels-pixabay-302831.png") no-repeat center;
     background-size: cover;
 }
-.blogs:nth-child(3) {
+.blog3 {
     background: url("./images/pexels-jovydas-2462015.png") no-repeat center;
     background-size: cover;
+}
+.blog4 {
+    background: url("./images/pexels-gfd.png") no-repeat center;
+    background-size: cover;
+    display: none;
+}
+.blog-title2, .blog-details2 {
+    display: none;
+}
+.blog-title, .blog-title2 {
+    margin: 20px 0;
 }
 .card-image p {
     color: #fff;
 }
-.blog-title {
+.blog-title, .blog-title2 {
     width: 370px;
     font-weight: 500;
     font-size: 24px;
@@ -532,7 +562,7 @@ li {
 .space {
     width: 220px;
 }
-.blog-details {
+.blog-details, .blog-details2 {
     font-weight: 600;
     font-size: 18px;
     line-height: 26px;
@@ -613,4 +643,347 @@ footer {
 .copyright-section img {
     width: 130px;
     height: 72px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+    .navbar, .element:nth-child(3), .language {
+        display: none;
+    }
+    .dash-menu {
+        display: block;
+    }
+    .hero-section {
+        width: 768px;
+        height: 924px;
+    }
+    .arrow-section {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        transform: translate(-320%, 15%);
+    }
+    .main {
+        padding-left: 20px;
+    }
+    .main-text {
+        width: 542px;
+        height: 340px;
+    }
+    h1 {
+        font-weight: 500;
+        font-size: 65px;
+        line-height: 70px;
+    }
+    h2 {
+        font-size: 45px;
+        line-height: 50px;
+        font-weight: 500;
+    }
+    .about-section {
+        height: 878px;
+    }
+    .about-company {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-tabs {
+        width: 100%;
+    }
+    .about-image .arrow-section {
+        transform: translate(0, 0);
+        padding: 23px 15px;
+    }
+    .investments-section {
+        width: 768px;
+        height: 1061px;
+    }
+    .investments {
+        display: flex;
+        flex-direction: column;
+    }
+    .left-side {
+        padding: 50px 0;
+        position: relative;
+    }
+    .left-side h2 {
+        margin-bottom: 30px;
+    }
+    .left-side p {
+        display: flex;
+        padding-bottom: 16px;
+    }
+    .left-side .btn {
+        position: absolute;
+        top: 952px;
+    }
+    .right-side {
+        height: 344px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+    .right-image1 img, .right-image2 img {
+        width: 349px;
+        height: 344px;
+    }
+    .right-image1 img {
+        position: absolute;
+        top: 0;
+        left: 361px;
+    }
+    .right-image2 img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .property-heading {
+        margin: 150px 0 50px;
+    }
+    .property-lists {
+        display: flex;
+        flex-direction: column;
+    }
+    .list1 {
+        border-right: none;
+        margin-left: 25px;
+    }
+    .advantages-section {
+        margin: 150px 0;
+    }
+    .cards-container {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .cards {
+        width: 306px;
+        height: 326px;
+        padding: 45px 30px;
+        border: 1px solid #EAEAEA;
+        margin: 10px;
+    }
+    .cards:nth-child(3){
+        grid-area: 2 / 3 / 2 / 2; 
+    }
+    .cards:nth-child(8){
+        grid-area: 4 / 1 / 4 / 2; 
+    }
+    .cards:nth-child(10){
+        display: block; 
+    }
+    .cards-building {
+        width: 316px;
+        height: 500px;
+    }
+    .buildings .arrow-section {
+        display: none;
+    }
+    .card {
+        width: 316px;
+        height: 100%;
+        position: relative;
+    }
+    .card-text {
+        padding: 364px 24px 24px 24px;
+    }
+    .like img{
+        position: absolute;
+        top: 16px;
+        left: 270px;
+        cursor: pointer;
+    }
+    .buildings .btn {
+        width: 253px;
+        margin: 40px 203px;
+    }
+    .credit-section {
+        width: 100%;
+        margin: 150px 0 150px;
+    }
+    .credit-fulfillment {
+        width: 728px;
+        height: 553px;
+    }
+    .credit-form {
+        display: grid;
+        grid-template-columns: 316px;
+        gap: 15px;
+    }
+    .information {
+        display: grid;
+        grid-template-columns: 218px;
+        border-left: 1px solid #EAEAEA;
+        gap: 30px;
+    }
+    .credit-fulfillment button {
+        margin-top: 30px;
+    }
+    .question-section {
+        height: 939px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .question-image {
+        width: 100%;
+        height: 370px;
+    }
+    .question-fulfillment {
+        width: 688px;
+        padding: 40px;
+    }
+    .blog-section {
+        height: 989px;
+        margin: 150px 0;
+    }
+    .blog-card {
+        width: 310px;
+        height: 385px;
+    }
+    .card-image {
+        width: 310px;
+        height: 259px;
+        padding: 200px 10px 0;
+        gap: 120px;
+    }
+    .blog-cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .blog-title, .blog-title2 {
+        width: 335px;
+        font-size: 24px;
+    }
+    .blog4 {
+        display: block;
+    }
+    .blog-title2, .blog-details2 {
+        display: block;
+    }
+    .space {
+        width: 210px;
+    }
+    .blog-section .btn {
+        margin: 50px 0 150px 212px;
+    }
+    .important-section p {
+        font-size: 22px;
+    }
+    .important-section span {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .important-section p, .important-section span {
+        margin-right: 40px;
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .container {
+        width: 95%;
+        margin: 0 auto;
+    }
+    h1 {
+        font-size: 35px;
+        line-height: 41px;
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .btn {
+        width: 180px;
+        padding: 12px 16px;
+    }
+    .header {
+        width: 300px;
+        height: 72px;
+    }
+    .logo-text {
+        width: 152px;
+    }
+    .elements {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+    }
+    .element {
+        width: 40px;
+        height: 40px;
+    }
+    .element img {
+        transform: translate(30%, 30%);
+    }
+    .main-text {
+        width: 323px;
+        margin-top: 200px;
+    }
+    .hero-section {
+        position: relative;
+    }
+    .arrow-section {
+        position: absolute;
+        top: 520px;
+        left: 0;
+    }
+    .about-section {
+        height: 670px;
+        margin: 120px 0;
+    }
+    .about-heading {
+        width: 328px;
+    }
+    .tabs {
+        width: 328px;
+        height: 38px;
+        display: flex;
+        justify-content: center;
+        gap: 33px;
+    }
+    .tabs li {
+        font-size: 16px;
+        line-height: 24px;
+        padding-bottom: 15px;
+    }
+    .about-tabs p {
+        padding: 20px 0 40px;
+    }
+    .about-image {
+        width: 100%;
+        height: 240px;
+    }
+    .investments-section {
+        width: 100%;
+        height: 949px;
+    }
+    .right-side {
+        display: none;
+    }
+    .right-side-hidden {
+        display: block;
+        width: 328px;
+        height: 240px;
+        position: relative;
+    }
+    .right-side-hidden .right-image1 img {
+        width: 158px;
+        height: 240px;
+        position: absolute;
+        left: 0;
+    }
+     .right-side-hidden .right-image2 img {
+        width: 158px;
+        height: 240px;
+        position: absolute;
+        top: 0;
+        left: 170px;
+     }
 }

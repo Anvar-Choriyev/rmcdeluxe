@@ -47,6 +47,9 @@
                     <div class="element">
                         <img src="./icons/carbon_phone-filled.png" alt="Телефон">
                     </div>
+                    <div class="element dash-menu">
+                        <img src="./icons/mage_dash-menu.png" alt="Телефон">
+                    </div>
                 </div>
                 <div class="language">
                     <p>Ru</p>
@@ -105,6 +108,14 @@
             <div class="investments">
                 <div class="left-side">
                     <h2>Инвестиции в недвижимость в Дубае</h2>
+                    <div class="right-side-hidden">
+                        <div class="right-image1">
+                            <img src="./images/pexels-marketingtuigs.png" alt="Квартира1">
+                        </div>
+                        <div class="right-image2">
+                            <img src="./images/pexels-pixabay.png" alt="Квартира2">
+                        </div>
+                    </div>
                     <p>Недвижимость в Дубае предоставляет отличные возможности для получения стабильного дохода и увеличения капитала</p>
                     <p>Полный цикл инвестиций: От анализа рынка и подбора объектов до управления инвестициями и их реализации.</p>
                     <p>Наши эксперты помогут вам на всех этапах инвестиционного процесса, обеспечивая высокое качество обслуживания и надежность.</p>
@@ -186,6 +197,7 @@
                     <h4>Комплексное обслуживание</h4>
                     <p>Полный спектр услуг, включающий аренду, куплю-продажу, управление и инвестиции в недвижимость</p>
                 </div>
+                <div class="cards"></div>
             </div>
         </div>
         <div class="buildings">
@@ -243,15 +255,6 @@
                         <label for="input2">Первоначальный взнос (у.е.)</label> <br>
                         <input type="text" id="input2" placeholder="Введите размер взноса">
                     </div>
-                    <div></div>
-                    <div class="credit-info">
-                        <p>Ежемесячный платеж</p>
-                        <h4>4 410 у.е.</h4>
-                    </div>
-                    <div class="credit-info">
-                        <p>Сумма кредита</p>
-                        <h4>200 000 у.е.</h4>
-                    </div>
                     <div class="forms">
                         <label for="input3">Срок в годах</label> <br>
                         <input type="text" id="input3" placeholder="Введите срок"> 
@@ -260,7 +263,16 @@
                         <label for="input4">Ставка (%)</label> <br>
                         <input type="text" id="input4" placeholder="Введите размер ставки"> 
                     </div>
-                    <div></div>
+                </form>
+                <div class="information">
+                    <div class="credit-info">
+                        <p>Ежемесячный платеж</p>
+                        <h4>4 410 у.е.</h4>
+                    </div>
+                    <div class="credit-info">
+                        <p>Сумма кредита</p>
+                        <h4>200 000 у.е.</h4>
+                    </div>
                     <div class="credit-info">
                         <p>Процентная ставка</p>
                         <h4>24%</h4>
@@ -269,8 +281,8 @@
                         <p>Дата последнего платежа</p>
                         <h4>28 июля 2034 г</h4>
                     </div>
-                    <button class="btn">Рассчитать</button>
-                </form>
+                </div>
+                <button class="btn">Рассчитать</button>
             </div>
         </div>
         <div class="question-section">
@@ -289,30 +301,46 @@
         <div class="blog-section">
             <h2>Блог</h2>
             <div class="blog-cards">
-                <div class="blogs">
-                    <div class="card-image">
-                        <p>31.07.2024</p>
-                        <p><img src="./icons/Group.png" alt="глаз"> 899</p>
+                <div class="blog-card">
+                    <div class="blog1">
+                        <div class="card-image">
+                            <p>31.07.2024</p>
+                            <p><img src="./icons/Group.png" alt="глаз"> 899</p>
+                        </div>
                     </div>
+                    <p class="blog-title">Тенденции и прогнозы рынка недвижимости на 2024 год</p>
+                    <p class="blog-details">Подробнее <img src="./icons/arrow.png" alt="Cтрелка"></p>
                 </div>
-                <div class="blogs">
-                    <div class="card-image">
-                        <p>31.07.2024</p>
-                        <p><img src="./icons/Group.png" alt="глаз"> 899</p>
+                <div class="blog-card">
+                    <div class="blog2">
+                        <div class="card-image">
+                            <p>31.07.2024</p>
+                            <p><img src="./icons/Group.png" alt="глаз"> 899</p>
+                        </div>
                     </div>
+                    <p class="blog-title">Лучшие районы для инвестиций в недвижимость</p>
+                    <p class="blog-details">Подробнее <img src="./icons/arrow.png" alt="Cтрелка"></p>
                 </div>
-                <div class="blogs">
-                    <div class="card-image">
-                        <p>31.07.2024</p>
-                        <p><img src="./icons/Group.png" alt="глаз"> 899</p>
+                <div class="blog-card">
+                    <div class="blog3">
+                        <div class="card-image">
+                            <p>31.07.2024</p>
+                            <p><img src="./icons/Group.png" alt="глаз"> 899</p>
+                        </div>
                     </div>
+                    <p class="blog-title space">Топ-10 новых жилых комплексов</p>
+                    <p class="blog-details">Подробнее <img src="./icons/arrow.png" alt="Cтрелка"></p>
                 </div>
-                <p class="blog-title">Тенденции и прогнозы рынка недвижимости на 2024 год</p>
-                <p class="blog-title">Лучшие районы для инвестиций в недвижимость</p>
-                <p class="blog-title space">Топ-10 новых жилых комплексов</p>
-                <p class="blog-details">Подробнее <img src="./icons/arrow.png" alt="Cтрелка"></p>
-                <p class="blog-details">Подробнее <img src="./icons/arrow.png" alt="Cтрелка"></p>
-                <p class="blog-details">Подробнее <img src="./icons/arrow.png" alt="Cтрелка"></p>
+                <div class="blog-card">
+                    <div class="blog4">
+                        <div class="card-image">
+                            <p>31.07.2024</p>
+                            <p><img src="./icons/Group.png" alt="глаз"> 899</p>
+                        </div>
+                    </div>
+                    <p class="blog-title2">Элитные апартаменты становятся всё...</p>
+                    <p class="blog-details2">Подробнее <img src="./icons/arrow.png" alt="Cтрелка"></p>
+                </div>
             </div>
             <button class="btn">Все статьи</button>
         </div>
